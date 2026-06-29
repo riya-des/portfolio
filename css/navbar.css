@@ -38,7 +38,7 @@
 
 .logo img {
 
-    width: 170px;
+    width: 120px;
     height: auto;
 
 }
@@ -129,5 +129,61 @@
 .connect-btn:hover {
 
     background: #1d1d1d;
+
+}
+
+/* ======================================
+   HERO ANIMATIONS
+====================================== */
+
+@keyframes polaroidDrop{
+
+    0%{
+        opacity:0;
+        transform:translateY(-350px) rotate(-20deg);
+    }
+
+    70%{
+        opacity:1;
+        transform:translateY(15px) rotate(-10deg);
+    }
+
+    100%{
+        opacity:1;
+        transform:translateY(0) rotate(-10deg);
+    }
+
+}
+
+@keyframes pencilSwing{
+
+    0%{
+        opacity:0;
+        transform:translateX(250px) rotate(70deg);
+    }
+
+    70%{
+        opacity:1;
+        transform:translateX(-10px) rotate(25deg);
+    }
+
+    100%{
+        opacity:1;
+        transform:translateX(0) rotate(35deg);
+    }
+
+}
+
+@keyframes brushSlide{
+
+    0%{
+        opacity:0;
+        transform:translateX(180px);
+    }
+
+    100%{
+        opacity:1;
+        transform:translateX(0);
+    }
 
 }

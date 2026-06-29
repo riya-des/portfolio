@@ -29,10 +29,85 @@
 
 }
 
+.hero-assets{
 
-.hero-content{
-    position: relative;
-    z-index: 3;
+    position:absolute;
+    inset:0;
+    pointer-events:none;
+    z-index:5;
+
+}
+
+
+/* ===========================
+   POLAROID
+=========================== */
+
+.polaroid{
+
+    position:absolute;
+
+    width: 660px;
+
+    top: -150px;
+    left: -120px;;
+
+    opacity:0;
+
+    transform:translateY(-800px) rotate(-10 deg);
+
+    filter:
+    drop-shadow(0 12px 20px rgba(0,0,0,.08))
+    drop-shadow(0 28px 45px rgba(0,0,0,.14));
+
+}
+
+
+/* ===========================
+   PENCIL
+=========================== */
+
+.pencil{
+
+    position:absolute;
+
+    width:350px;
+
+    right:-110px;
+
+    top:150px;
+
+    opacity:0;
+    z-index:10;
+
+    transform-origin:bottom center;
+
+    transform:
+    translateX(300px)
+
+
+}
+
+
+/* ===========================
+   BRUSH
+=========================== */
+
+.brush{
+
+    position:absolute;
+
+    width:140px;
+
+    right:-30px;
+
+    top:100px;
+
+    opacity:0;
+
+    transform:
+    translateX(220px);
+
 }
 
 /* =====================================
@@ -141,3 +216,106 @@
 
 }
 
+@keyframes polaroidDrop{
+
+    0%{
+
+        opacity:0;
+
+        transform:
+        translateY(-350px)
+        rotate(-1deg);
+
+    }
+
+    65%{
+
+        opacity:1;
+
+        transform:
+        translateY(18px)
+        rotate(-8deg);
+
+    }
+
+    82%{
+
+        transform:
+        translateY(-8px)
+        rotate(-7deg);
+
+    }
+
+    100%{
+
+        opacity:1;
+
+        transform:
+        translateY(0)
+        rotate(-6deg);
+
+    }
+
+}
+
+
+
+@keyframes pencilSwing{
+
+    0%{
+
+        opacity:0;
+
+        transform:
+        translateX(320px)
+        rotate(14deg);
+
+    }
+
+    70%{
+
+        opacity:1;
+
+        transform:
+        translateX(-12px)
+        rotate(6deg);
+
+    }
+
+    100%{
+
+        opacity:1;
+
+        transform:
+        translateX(0)
+        rotate(-4deg);
+
+    }
+
+}
+
+
+
+@keyframes brushSlide{
+
+    0%{
+
+        opacity:0;
+
+        transform:
+        translateX(220px)
+        rotate(-4deg);
+
+    }
+
+    100%{
+
+        opacity:1;
+
+        transform:
+        translateX(0)
+        rotate(-10deg);
+
+    }
+
+}
