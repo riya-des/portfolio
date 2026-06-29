@@ -16,13 +16,16 @@
 
 #hero-video{
 
-    position:relative;
+    position: relative;
 
-    width:min(100%,1920px);
+    transform: translateY(-140px);
 
-    height:auto;
+    width: min(100%, 1920px);
 
-    object-fit:contain;
+    height: auto;
+
+    object-fit: contain;
+    
 
 }
 
@@ -40,7 +43,7 @@
 
     position:relative;
 
-    margin-top:-220px;
+    margin-top:-300px;
 
     min-height:100vh;
 
