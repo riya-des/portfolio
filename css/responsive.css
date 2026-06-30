@@ -240,7 +240,43 @@
         margin-top:-180px;
     }
 
+    .mobile-resume{
+
+        position:fixed;
+
+        bottom:24px;
+
+        left:50%;
+
+        transform:translateX(-50%);
+
+        background:#fff;
+
+        color:#222;
+
+        border:1px solid rgba(0,0,0,.15);
+
+        border-radius:999px;
+
+        padding:12px 28px;
+
+        font-size:14px;
+
+        font-weight:500;
+
+        text-decoration:none;
+
+        box-shadow:0 10px 25px rgba(0,0,0,.12);
+
+        z-index:9999;
+
+        transition:.3s;
+
+    }
+
 }
+
+
 
 
 
@@ -251,59 +287,143 @@
 @media (max-width:480px){
 
     .navbar{
-        padding:16px;
+        display:none;
     }
 
-    .logo img{
-        width:80px;
-    }
 
     .nav-buttons{
-        gap:8px;
+
+        position:fixed;
+
+        left:50%;
+
+        bottom:30px;
+
+        transform:translateX(-50%);
+
+        display:flex;
+
+        gap:14px;
+
+        z-index:9999;
+
     }
 
     .nav-buttons a{
-        height:34px;
-        padding:0 14px;
-        font-size:12px;
+
+        height:40px;
+
+        padding:0 20px;
+
+        font-size:13px;
+
+        border-radius:999px;
+
     }
 
-    .polaroid{
-        width:165px;
-        left:-45px;
-        top:15px;
-    }
+/* ---------- SERVICES ---------- */
 
-    .pencil{
-        width:105px;
-        right:-40px;
-        top:210px;
-    }
+#services{
 
-    .brush{
-        width:45px;
-        right:5px;
-        top:195px;
-    }
+    margin-top:-170px;
 
-    #hero{
-        min-height:52vh;
-    }
+    min-height:430px;
 
-    #services{
-        margin-top:-100px;
-    }
+}
 
-    .service-card{
-        width:88%;
-        max-width:260px;
-        border-radius:18px;
-    }
+.cards-container{
 
-    .service-card img{
-        border-radius:18px;
-    }
+    position:relative;
 
-    
+    width:320px;
 
+    height:320px;
+
+}
+
+.service-card{
+
+    position:absolute;
+
+    width:170px;
+
+}
+
+/* Left */
+
+.card-left{
+
+    left:0;
+
+    bottom:0;
+
+    transform:rotate(-8deg);
+
+}
+
+/* Center */
+
+.card-center{
+
+    left:50%;
+
+    top:0;
+
+    transform:translateX(-50%) rotate(-2deg);
+
+    z-index:3;
+
+}
+
+/* Right */
+
+.card-right{
+
+    right:-0%;
+
+    bottom:0;
+
+    transform:rotate(8deg);
+
+}
+
+.mobile-resume{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    position:fixed;
+
+    left:50%;
+
+    bottom:24px;
+
+    transform:translateX(-50%);
+
+    width:120px;
+
+    height:44px;
+
+    background:#1f1f1f;
+
+    color:#ffffff;
+
+    text-decoration:none;
+
+    font-size:14px;
+
+    font-weight:500;
+
+    border-radius:999px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.18);
+
+    z-index:9999;
+
+    transition:.3s ease;
+
+}
 }
