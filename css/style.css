@@ -148,3 +148,9 @@ button{
     font-family:inherit;
 
 }
+
+.page-wrapper{
+
+    min-width:1200px;
+
+}

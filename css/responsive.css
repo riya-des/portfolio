@@ -1,0 +1,309 @@
+/* ===========================================
+   TABLET (1024px and below)
+=========================================== */
+
+@media (max-width:1024px){
+
+    /* ---------- NAVBAR ---------- */
+
+    .navbar{
+        padding:24px 40px;
+    }
+
+    .logo img{
+        width:140px;
+    }
+
+    .nav-buttons{
+        gap:12px;
+    }
+
+    /* ---------- HERO ---------- */
+
+    #hero{
+        height:auto;
+        min-height:90vh;
+    }
+
+    #hero-video{
+        width:100%;
+        transform:translateY(-80px);
+    }
+
+    /* ---------- HERO ASSETS ---------- */
+
+    .polaroid{
+        width:420px;
+        top:-70px;
+        left:-100px;
+    }
+
+    .pencil{
+
+        width:220px;
+
+        right:-80px;
+
+        top:100px;
+
+        transform:rotate(12deg);
+
+        z-index:10;
+
+    }
+
+    .brush{
+
+        width:90px;
+
+        right:-40px;
+
+        top:100px;
+
+        transform:rotate(6deg);
+
+        z-index:9;
+
+    }
+
+    .card-left{
+        left:6%;
+        transform:rotate(-5deg);
+    }
+
+    .card-right{
+        right:6%;
+
+    }
+
+    /* ---------- SERVICES ---------- */
+
+    #services{
+        margin-top:-140px;
+        padding-bottom:60px;
+    }
+
+    .cards-container{
+        width:90%;
+        max-width:850px;
+        aspect-ratio:900/620;
+    }
+
+    .service-card{
+        width:34%;
+    }
+
+}
+
+
+
+/* ===========================================
+   MOBILE (768px and below)
+=========================================== */
+
+@media (max-width:768px){
+
+/* ---------- HERO ---------- */
+
+#hero{
+
+    height:70vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:flex-start;
+
+}
+
+#hero-video{
+
+    width:120%;
+
+    max-width:none;
+
+    height:70vh;
+
+    transform:translateY(20px);
+
+}
+
+.polaroid{
+
+    width:300px;
+
+    top:-50px;
+
+    left:-85px;
+
+    transform:rotate(-10deg);
+
+    filter:
+        drop-shadow(0 15px 25px rgba(0,0,0,.10))
+        drop-shadow(0 30px 45px rgba(0,0,0,.15));
+
+}
+
+.pencil{
+
+    width:135px;
+
+    top:80px;
+
+    right:-50px;
+
+    transform:rotate(18deg);
+
+    transform-origin:bottom center;
+
+    z-index:10;
+
+}
+.brush{
+
+    width:55px;
+
+    top:40px;
+
+    right:-40px;
+
+    transform:rotate(10deg);
+
+    transform-origin:bottom center;
+
+    z-index:9;
+
+}
+
+/* ---------- NAVBAR ---------- */
+
+.navbar{
+
+    padding:20px 20px 0;
+
+}
+
+.logo{
+
+    width:26%;
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.logo img{
+
+    width:80px;
+
+    height:auto;
+
+}
+
+.nav-buttons{
+
+        position:absolute;
+
+        top:18px;
+
+        right:16px;
+
+        gap:8px;
+
+    }
+
+    .nav-buttons a{
+
+        height:34px;
+
+        padding:0 14px;
+
+        font-size:12px;
+
+        font-weight:500;
+
+        border-radius:999px;
+
+    }
+
+    .service-card{
+        border-radius:18px;
+    }
+
+    .service-card img{
+        border-radius:18px;
+    }
+
+    #services{
+        margin-top:-180px;
+    }
+
+}
+
+
+
+/* ===========================================
+   SMALL PHONES (480px and below)
+=========================================== */
+
+@media (max-width:480px){
+
+    .navbar{
+        padding:16px;
+    }
+
+    .logo img{
+        width:80px;
+    }
+
+    .nav-buttons{
+        gap:8px;
+    }
+
+    .nav-buttons a{
+        height:34px;
+        padding:0 14px;
+        font-size:12px;
+    }
+
+    .polaroid{
+        width:165px;
+        left:-45px;
+        top:15px;
+    }
+
+    .pencil{
+        width:105px;
+        right:-40px;
+        top:210px;
+    }
+
+    .brush{
+        width:45px;
+        right:5px;
+        top:195px;
+    }
+
+    #hero{
+        min-height:52vh;
+    }
+
+    #services{
+        margin-top:-100px;
+    }
+
+    .service-card{
+        width:88%;
+        max-width:260px;
+        border-radius:18px;
+    }
+
+    .service-card img{
+        border-radius:18px;
+    }
+
+    
+
+}
