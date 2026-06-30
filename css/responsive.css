@@ -325,27 +325,18 @@
 
 #services{
 
-    margin-top:-170px;
-
-    min-height:430px;
-
-}
-
-.cards-container{
-
-    position:relative;
-
-    width:320px;
-
-    height:320px;
+    margin-top: -140px;
+    min-height: 50vh;
 
 }
+
+
 
 .service-card{
 
     position:absolute;
 
-    width:170px;
+    width:150px;
 
 }
 
@@ -367,7 +358,7 @@
 
     left:50%;
 
-    top:0;
+    top:-50%;
 
     transform:translateX(-50%) rotate(-2deg);
 
@@ -401,8 +392,6 @@
 
     bottom:24px;
 
-    transform:translateX(-50%);
-
     width:120px;
 
     height:44px;
@@ -423,7 +412,21 @@
 
     z-index:9999;
 
-    transition:.3s ease;
+    opacity:0;
+
+    transform:translate(-50%, 30px);
+
+    transition:
+        opacity .5s ease,
+        transform .5s ease;
+
+}
+
+.mobile-resume.show{
+
+    opacity:1;
+
+    transform:translate(-50%, 0);
 
 }
 }

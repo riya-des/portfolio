@@ -168,13 +168,23 @@
 
     max-width:320px;
 
-    transition:.45s ease;
-
     cursor:pointer;
 
     transform-style:preserve-3d;
 
     border-radius:28px;
+
+    opacity:0;
+
+    transition:
+        opacity .7s ease,
+        filter .45s ease;
+
+}
+
+.service-card.show{
+
+    opacity:1;
 
 }
 

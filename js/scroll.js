@@ -1,56 +1,59 @@
+const cards = document.querySelectorAll(".service-card");
 const navbar = document.querySelector(".navbar");
 const mobileResume = document.querySelector(".mobile-resume");
 
-let lastScroll = 0;
+// ----------------------------
+// Initial Animations
+// ----------------------------
 
-// Show navbar after intro animation
 window.addEventListener("load", () => {
 
-    setTimeout(() => {
+    // Resume button appears
+    if (mobileResume) {
+        setTimeout(() => {
+            mobileResume.classList.add("show");
+        }, 2200);
+    }
 
-        navbar.classList.add("show");
+    // Cards appear one by one
+    cards.forEach((card, index) => {
 
-    }, 3200);
+        setTimeout(() => {
+
+            card.classList.add("show");
+
+        }, 2800 + (index * 180));
+
+    });
+
+    // Desktop navbar appears
+    if (navbar && window.innerWidth > 480) {
+        setTimeout(() => {
+            navbar.classList.add("show");
+        }, 3400);
+    }
 
 });
 
+// ----------------------------
+// Navbar Scroll
+// ----------------------------
+
 window.addEventListener("scroll", () => {
 
-    // Mobile Resume Button
-    if(window.innerWidth <= 480){
+    // No navbar animation on small phones
+    if (window.innerWidth <= 480) return;
 
-        if(mobileResume){
-
-            if(window.scrollY > lastScroll){
-
-                mobileResume.style.transform = "translate(-50%,120px)";
-
-            }else{
-
-                mobileResume.style.transform = "translate(-50%,0)";
-
-            }
-
-        }
-
-        lastScroll = window.scrollY;
-        return;
-    }
-
-    // Desktop / Tablet Navbar
-
-    if(window.scrollY > 50){
+    if (window.scrollY > 50) {
 
         navbar.classList.add("hide");
         navbar.classList.remove("show");
 
-    }else{
+    } else {
 
         navbar.classList.remove("hide");
         navbar.classList.add("show");
 
     }
-
-    lastScroll = window.scrollY;
 
 });
