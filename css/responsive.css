@@ -336,13 +336,15 @@
 
     position:absolute;
 
-    width:150px;
+    width:160px;
 
 }
 
 /* Left */
 
 .card-left{
+
+    top:0%;
 
     left:0;
 
@@ -360,7 +362,7 @@
 
     top:-50%;
 
-    transform:translateX(-50%) rotate(-2deg);
+    transform:translateX(-50%) rotate(1deg);
 
     z-index:3;
 
