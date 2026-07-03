@@ -566,7 +566,7 @@
     height:140px;
 
     backdrop-filter:blur(24px);
-    -webkit-backdrop-filter:blur(24px);
+    /* -webkit-backdrop-filter:blur(24px);
 
     background:rgba(255,255,255,.04);
 
@@ -590,7 +590,7 @@
 
     pointer-events:none;
 
-    z-index:4;
+    z-index:4; */ 
 }
 
 .project-tags{
@@ -623,22 +623,43 @@
 
 }
 
-.project-scroll{
+.projects-gallery{
+    width: min(1300px, 92vw);
+    margin: 10px auto 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-bottom: 60px;
+}
+
+.projects-track{
+    display: flex;
+    gap: 24px;
+}
+
+.project-card{
+    flex: 0 0 calc((100% - 24px) / 2);
+    border-radius: 24px;
+    overflow: hidden;
+}
+
+.project-card img{
 
     width:100%;
 
     display:block;
 
-    transform:translateY(10px);
+    pointer-events:none;
 
-    will-change:transform;
+    user-select:none;
+
+    transition:transform .35s ease;
 
 }
 
-.project-link{
-    display:block;
-    text-decoration:none;
-    color:inherit;
+.project-card:hover img{
+
+    transform:scale(1.02);
+
 }
 
 @keyframes polaroidDrop{
