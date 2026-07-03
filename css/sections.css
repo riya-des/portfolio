@@ -577,7 +577,6 @@
     height:140px;
 
     backdrop-filter:blur(24px);
-    -webkit-backdrop-filter:blur(24px);
 
     background:rgba(255,255,255,.04);
 
