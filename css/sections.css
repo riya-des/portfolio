@@ -459,6 +459,7 @@
 
     z-index:0;
 }
+
 .work-title span{
 
     position:absolute;
@@ -824,6 +825,154 @@
     color:#fff;
 
 }
+
+.branding-bg-text{
+
+    position:absolute;
+
+    top:-200px;
+    left:60%;
+
+    transform:translateX(-50%);
+
+    font-family:"Montserrat", sans-serif;
+    font-size:360px;
+    font-weight:700;
+    letter-spacing:-16px;
+    line-height:1;
+
+    white-space:nowrap;
+
+    color:rgba(0,0,0,.025);
+
+    pointer-events:none;
+
+    user-select:none;
+
+    z-index:0;
+
+}
+
+.branding-section{
+    position:relative;
+    margin-top:240px;
+
+}
+
+.branding-container{
+
+    position:relative;
+
+    width:86%;
+    max-width:1400px;
+
+    margin:0 auto;
+
+    height:520px;
+
+    background:#F7EEE6;
+
+    border-radius:28px;
+
+    overflow:visible;
+
+}
+
+.branding-label-mobile{
+    display:none;
+}
+
+.branding-label-desktop{
+
+    position:absolute;
+
+    top:34px;
+    right:42px;
+
+    font-size:22px;
+
+    letter-spacing:.18em;
+}
+
+.branding-base{
+
+    width:100%;
+
+    display:block;
+
+}
+
+.branding-illustration{
+
+    position:absolute;
+
+    width:38%;
+
+    left:7%;
+    top:14%;
+
+    pointer-events:none;
+
+}
+
+.menu-stack{
+
+    position:absolute;
+
+    right:-40px;
+    bottom:-90px;
+
+    width:560px;
+    height:520px;
+
+    z-index:20;
+
+}
+.menu-back{
+
+    position:absolute;
+
+    right: -80px;;
+    bottom:10px;
+
+    width:300px;
+
+    transform:rotate(-10deg);
+
+    z-index:1;
+
+}
+
+.menu-dark{
+
+    position:absolute;
+
+    left:-50px;
+    top:10px;
+
+    width:380px;
+
+    transform:rotate(-3deg);
+
+    z-index:2;
+
+}
+
+.menu-light{
+
+    position:absolute;
+
+    left:170px;
+    top:80px;
+
+    width:330px;
+
+    transform:rotate(-7deg);
+
+    z-index:3;
+
+}
+
 
 
 
