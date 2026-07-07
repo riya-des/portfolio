@@ -1,6 +1,6 @@
 const cards = document.querySelectorAll(".service-card");
 const navbar = document.querySelector(".navbar");
-const mobileResume = document.querySelector(".mobile-resume");
+const mobileActions = document.querySelector(".mobile-actions");
 
 // ----------------------------
 // Initial Animations
@@ -9,9 +9,9 @@ const mobileResume = document.querySelector(".mobile-resume");
 window.addEventListener("load", () => {
 
     // Resume button appears
-    if (mobileResume) {
+    if (mobileActions) {
         setTimeout(() => {
-            mobileResume.classList.add("show");
+            mobileActions.classList.add("show");
         }, 2200);
     }
 
@@ -81,7 +81,7 @@ window.addEventListener("scroll", () => {
     const distance = end - start;
 
     // Wait for 15% of the section before scrolling starts
-    const delay = distance * 0.20;
+    const delay = distance * 0.05;
 
     let progress =
         (window.scrollY - start - delay) /

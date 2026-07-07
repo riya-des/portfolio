@@ -651,6 +651,182 @@
 
 }
 
+.cta-section{
+
+    width:min(1300px,92vw);
+
+    margin:90px auto 120px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    gap:60px;
+
+}
+
+.cta-text{
+
+    max-width:560px;
+
+    font-size:1.15rem;
+
+    line-height:1.6;
+
+    font-weight:400;
+
+    color:#6F6F6F;
+
+}
+
+.cta-btn{
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    width:160px;
+    height:56px;
+
+    background:#2B2628;
+    color:#fff;
+
+    border:none;
+    border-radius:999px;
+
+    font-family:"Montserrat",sans-serif;
+    font-size:1rem;
+    font-weight:500;
+
+    text-decoration:none;
+
+    cursor:pointer;
+
+    transition:
+        background .3s ease,
+        transform .3s ease;
+
+}
+
+.cta-btn:hover{
+
+    background:#1E1A1B;
+
+    transform:translateY(-2px);
+
+}
+
+.cta-text{
+
+    max-width:560px;
+
+    font-size:1.15rem;
+
+    line-height:1.6;
+
+    font-weight:400;
+
+    color:#6F6F6F;
+
+}
+
+.cta-btn{
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    width:160px;
+    height:56px;
+
+    background:#2B2628;
+    color:#fff;
+
+    border:none;
+    border-radius:999px;
+
+    font-family:"Montserrat",sans-serif;
+    font-size:1rem;
+    font-weight:500;
+
+    text-decoration:none;
+
+    cursor:pointer;
+
+    transition:
+        background .3s ease,
+        transform .3s ease;
+
+}
+
+.cta-btn:hover{
+
+    background:#1E1A1B;
+
+    transform:translateY(-2px);
+
+}
+
+
+.mobile-actions{
+
+    display:none;
+
+    opacity:0;
+
+    transform:translateX(-50%) translateY(20px);
+
+    transition:opacity .4s ease, transform .4s ease;
+
+}
+
+.mobile-actions.show{
+
+    opacity:1;
+
+    transform:translateX(-50%) translateY(0);
+
+}
+
+.mobile-resume,
+.mobile-connect{
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    width:120px;
+    height:52px;
+
+    border-radius:999px;
+
+    text-decoration:none;
+
+    font-size:16px;
+    font-weight:500;
+
+    transition:.3s ease;
+
+}
+
+.mobile-resume{
+
+    background:#fff;
+    color:#2B2628;
+
+    border:1px solid #D8D8D8;
+
+}
+
+.mobile-connect{
+
+    background:#2B2628;
+    color:#fff;
+
+}
+
+
+
 @keyframes polaroidDrop{
 
     0%{
