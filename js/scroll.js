@@ -109,3 +109,31 @@ window.addEventListener("scroll", () => {
     // scrolling code...
 });
 
+
+const havenSection = document.querySelector(".haven-section");
+const havenId = document.querySelector(".haven-id-card");
+const havenCards = document.querySelector(".haven-business-cards");
+
+const havenObserver = new IntersectionObserver((entries) => {
+
+    entries.forEach(entry => {
+
+        if (!entry.isIntersecting) return;
+
+        setTimeout(() => {
+            havenId.classList.add("show");
+        }, 250);
+
+        setTimeout(() => {
+            havenCards.classList.add("show");
+        }, 700);
+
+        havenObserver.unobserve(entry.target);
+
+    });
+
+}, {
+    threshold:0.35
+});
+
+havenObserver.observe(havenSection);
