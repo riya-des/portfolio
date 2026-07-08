@@ -444,6 +444,11 @@
 
 @media (max-width:480px){
 
+    html,
+    body{
+        overflow-x: hidden;
+    }
+
     .navbar{
         display:none;
     }
@@ -906,5 +911,33 @@
         transform:rotate(-5deg);
 
     }
+
+     .branding-info{
+
+        margin-top:120px;
+        align-items:center;
+
+    }
+
+    .branding-logo{
+
+    width:120px;
+
+}
+
+
+    .branding-info p{
+
+        width:100%;
+
+        font-size:16px;
+
+        line-height:25.6px;
+
+        padding-bottom:80px;
+        text-align:center;
+
+    }
+
 
 }
