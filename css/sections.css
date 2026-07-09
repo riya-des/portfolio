@@ -1089,7 +1089,7 @@
     position:relative;
 
     margin-top:180px;
-    margin-bottom:180px;
+    margin-bottom:0px;
 
 }
 
@@ -1164,7 +1164,7 @@
     width:1000px;
 
     top:-10px;
-    right:90px;
+    right:60px;
 
     z-index:10;
 
@@ -1202,6 +1202,284 @@
     animation:cardsSlide .8s cubic-bezier(.22,1,.36,1) forwards;
 
 }
+
+.haven-content{
+    width: 86%;
+    max-width: 1400px;
+    margin: 40px auto 0;
+}
+
+.haven-logo{
+    width: 190px;
+    height: auto;
+    display: block;
+    margin-bottom: 24px;
+}
+
+.haven-description{
+    max-width: 650px;
+    font-size:18px;
+    line-height:1.75;
+    color: #1C1C1C;
+}
+
+.haven-description strong{
+    font-weight: 600;
+}
+
+
+.graphics-section{
+    position: relative;
+}
+
+.graphics-header{
+    position: relative;
+    height: 260px;
+    overflow: overflow;
+}
+
+.graphics-bg-text{
+   position:absolute;
+
+    top:0px;
+    left:60%;
+
+    transform:translateX(-50%);
+
+    font-family:"Montserrat", sans-serif;
+    font-size:360px;
+    font-weight:700;
+    letter-spacing:-16px;
+    line-height:1;
+
+    white-space:nowrap;
+
+    color:rgba(0,0,0,.025);
+
+    pointer-events:none;
+
+    user-select:none;
+
+    z-index:0;
+}
+
+.graphics-label-mobile{
+    position: absolute;
+    top: 50%;
+    right: 8%;
+    transform: translateY(-50%);
+
+    font-size: 30px;
+    font-weight: 300;
+    letter-spacing: .18em;
+    color: #262626;
+
+    z-index: 2;
+}
+
+.graphics-section{
+
+    position: relative;
+    margin-top:100px;
+    margin-bottom:220px;
+
+}
+
+.graphics-window{
+    position:relative;
+
+    width:100%;
+    height:750px;
+
+    overflow:hidden;
+}
+
+.graphics-content{
+
+    position:absolute;
+    inset:0;
+
+
+    z-index:2;
+
+}
+
+.graphics-top{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:50px 55px 0;
+
+}
+
+.graphics-brand{
+
+    font-size:26px;
+    font-weight:500;
+    color:#ffffff;
+
+    letter-spacing:-0.02em;
+
+}
+
+.graphics-navigation{
+
+    display:flex;
+    align-items:center;
+    gap:14px;
+
+}
+
+.graphics-arrow{
+
+    width:52px;
+    height:52px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    border:none;
+    background:none;
+    cursor:pointer;
+
+    padding:0;
+
+    transition:transform .3s ease, opacity .3s ease;
+
+}
+
+.graphics-arrow img{
+
+    width:100%;
+    display:block;
+
+}
+
+.graphics-arrow:hover{
+
+    transform:scale(1.08);
+
+}
+
+.graphics-arrow:active{
+
+    transform:scale(.95);
+
+}
+
+.graphics-gallery{
+
+    position:relative;
+
+    width:100%;
+
+    margin-top:70px;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    scrollbar-width:none;
+    cursor: grab;
+
+}
+
+
+
+.graphics-track{
+
+    display:flex;
+    gap:10px;
+
+    width:max-content;
+    padding-left:55px;
+    padding-right:55px;
+
+
+   
+
+}
+
+.graphics-card{
+
+    flex-shrink:0;
+
+    width:320px;
+
+    overflow:hidden;
+
+    cursor:grab;
+
+    transition:transform .35s ease;
+
+}
+
+.graphics-card img{
+
+    width:100%;
+    display:block;
+
+}
+
+.graphics-footer{
+
+    position:absolute;
+
+    left:55px;
+    right:55px;
+    bottom:45px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    z-index:2;
+
+}
+
+.graphics-action{
+
+    background:none;
+    border:none;
+    padding:0;
+
+    cursor:pointer;
+
+    transition:transform .3s ease;
+
+}
+
+.graphics-action img{
+
+    width:32px;
+    display:block;
+
+}
+
+.graphics-action:hover{
+
+    transform:scale(1.08);
+
+}
+
+.graphics-action:active{
+
+    transform:scale(.92);
+
+}
+
+.graphics-gallery.dragging{
+    cursor: grabbing;
+    user-select: none;
+}
+
+.graphics-gallery.dragging img{
+    pointer-events: none;
+}
+
+
+
 @keyframes polaroidDrop{
 
     0%{

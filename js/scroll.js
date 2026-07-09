@@ -137,3 +137,56 @@ const havenObserver = new IntersectionObserver((entries) => {
 });
 
 havenObserver.observe(havenSection);
+
+
+const graphicsGallery = document.querySelector(".graphics-gallery");
+
+if (graphicsGallery) {
+
+    graphicsGallery.scrollLeft = 55;
+
+    let isDragging = false;
+    let startX;
+    let scrollLeft;
+
+    graphicsGallery.addEventListener("mousedown", (e) => {
+
+        isDragging = true;
+
+        graphicsGallery.classList.add("dragging");
+
+        startX = e.pageX - graphicsGallery.offsetLeft;
+        scrollLeft = graphicsGallery.scrollLeft;
+
+    });
+
+    document.addEventListener("mousemove", (e) => {
+
+        if (!isDragging) return;
+
+        e.preventDefault();
+
+        const x = e.pageX - graphicsGallery.offsetLeft;
+        const walk = (x - startX) * 1.3;
+
+        graphicsGallery.scrollLeft = scrollLeft - walk;
+
+    });
+
+    document.addEventListener("mouseup", () => {
+
+        isDragging = false;
+
+        graphicsGallery.classList.remove("dragging");
+
+    });
+
+    document.addEventListener("mouseleave", () => {
+
+        isDragging = false;
+
+        graphicsGallery.classList.remove("dragging");
+
+    });
+
+}
