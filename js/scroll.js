@@ -190,3 +190,103 @@ if (graphicsGallery) {
     });
 
 }
+
+
+
+const projects = [
+
+    {
+
+        brand: "@uroparis",
+        bgClass: "uroparis-bg",
+        background: "assets/images/graphics-bg.png",
+
+        images: [
+
+            "assets/images/uroparis-1.png",
+            "assets/images/uroparis-2.png",
+            "assets/images/uroparis-3.png",
+            "assets/images/uroparis-4.png",
+            "assets/images/uroparis-5.png",
+            "assets/images/uroparis-6.png"
+
+        ]
+
+    },
+
+    {
+
+        brand: "@sayagrandbytreat",
+        bgClass: "saya-bg",
+        background: "assets/images/saya-bg.png",
+
+        images: [
+
+            "assets/images/saya-1.png",
+            "assets/images/saya-2.png",
+            "assets/images/saya-3.png",
+            "assets/images/saya-4.png",
+            "assets/images/saya-5.png",
+            "assets/images/saya-6.png",
+            "assets/images/saya-7.png",
+            "assets/images/saya-8.png",
+            "assets/images/saya-9.png"
+
+        ]
+
+    }
+
+];
+
+let currentProject = 0;
+const graphicsWindow = document.querySelector(".graphics-window");
+const graphicsBg = document.getElementById("graphicsBg");
+const graphicsBrand = document.getElementById("graphicsBrand");
+const graphicsTrack = document.getElementById("graphicsTrack");
+
+
+function renderProject(index){
+
+    const project = projects[index];
+
+    graphicsBrand.textContent = project.brand;
+
+    graphicsBg.src = project.background;
+
+    graphicsBg.className = `graphics-bg ${project.bgClass}`;
+
+    graphicsTrack.innerHTML = "";
+
+    project.images.forEach(image => {
+
+        graphicsTrack.innerHTML += `
+            <div class="graphics-card">
+                <img src="${image}" alt="">
+            </div>
+        `;
+
+    });
+
+    graphicsGallery.scrollTo({
+        left:55,
+        behavior:"smooth"
+    });
+
+}
+
+renderProject(currentProject);
+document.querySelector(".graphics-next").addEventListener("click", () => {
+
+    currentProject = (currentProject + 1) % projects.length;
+    renderProject(currentProject);
+
+});
+
+document.querySelector(".graphics-prev").addEventListener("click", () => {
+
+    currentProject =
+        (currentProject - 1 + projects.length) % projects.length;
+
+    renderProject(currentProject);
+
+});
