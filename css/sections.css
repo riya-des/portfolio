@@ -1601,6 +1601,88 @@
 
 }
 
+.graphics-bg.avekshaa-bg{
+
+    max-width:none;
+
+    width:145%;
+
+    height:100%;
+
+    left:50%;
+    top:0;
+
+    object-fit:cover;
+
+    transform:translateX(-50%);
+
+}
+
+.graphics-bg.teamglobal-bg{
+
+    max-width:none;
+
+    width:135%;
+
+    height:100%;
+
+    left:50%;
+    top:0;
+
+    object-fit:cover;
+
+    transform:translateX(-50%);
+
+}
+
+.graphics-bg.inskin-bg{
+
+    max-width:none;
+
+    width:120%;
+    height:100%;
+
+    left:50%;
+    top:0;
+
+    object-fit:cover;
+
+    transform:translateX(-50%);
+
+}
+
+.graphics-bg.beratung-bg{
+
+    max-width:none;
+
+    width:135%;
+    height:100%;
+
+    left:50%;
+    top:0;
+
+    object-fit:cover;
+
+    transform:translateX(-50%);
+
+}
+
+.graphics-bg.visure-bg{
+
+    max-width:none;
+
+    width:125%;
+    height:100%;
+
+    left:50%;
+    top:0;
+
+    object-fit:cover;
+
+    transform:translateX(-50%);
+
+}
+
 @keyframes polaroidDrop{
 
     0%{

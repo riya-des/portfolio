@@ -234,7 +234,109 @@ const projects = [
 
         ]
 
-    }
+    },
+
+    {
+        brand: "@avekshaa",
+        bgClass: "avekshaa-bg",
+
+        background: "assets/images/avekshaa-bg.png",
+
+        images: [
+
+            "assets/images/avekshaa-1.png",
+            "assets/images/avekshaa-2.png",
+            "assets/images/avekshaa-3.png",
+            "assets/images/avekshaa-4.png",
+            "assets/images/avekshaa-5.png",
+            "assets/images/avekshaa-6.png",
+            "assets/images/avekshaa-7.png",
+            "assets/images/avekshaa-8.png"
+
+        ]
+
+    },
+
+    {
+        brand: "@teamglobal",
+        bgClass: "teamglobal-bg",
+
+        background: "assets/images/teamglobal-bg.png",
+
+        images: [
+
+            "assets/images/teamglobal-1.png",
+            "assets/images/teamglobal-2.png",
+            "assets/images/teamglobal-3.png",
+            "assets/images/teamglobal-4.png",
+            "assets/images/teamglobal-5.png",
+            "assets/images/teamglobal-6.png",
+            "assets/images/teamglobal-7.png",
+            "assets/images/teamglobal-8.png"
+
+        ]
+
+    },
+
+    {
+    brand: "@inskin",
+    bgClass: "inskin-bg",
+
+    background: "assets/images/inskin-bg.png",
+
+    images: [
+
+        "assets/images/inskin-1.png",
+        "assets/images/inskin-2.png",
+        "assets/images/inskin-3.png",
+        "assets/images/inskin-4.png",
+        "assets/images/inskin-5.png",
+        "assets/images/inskin-6.png",
+        "assets/images/inskin-7.png",
+        "assets/images/inskin-8.png"
+
+    ]
+
+},
+
+{
+    brand: "@beratung",
+    bgClass: "beratung-bg",
+
+    background: "assets/images/beratung-bg.png",
+
+    images: [
+
+        "assets/images/beratung-1.png",
+        "assets/images/beratung-2.png",
+        "assets/images/beratung-3.png",
+        "assets/images/beratung-4.png",
+        "assets/images/beratung-5.png",
+        "assets/images/beratung-6.png",
+        "assets/images/beratung-7.png",
+        "assets/images/beratung-8.png"
+
+    ]
+
+},
+{
+    brand: "@visure",
+    bgClass: "visure-bg",
+
+    background: "assets/images/visure-bg.png",
+
+    images: [
+
+        "assets/images/visure-1.png",
+        "assets/images/visure-2.png",
+        "assets/images/visure-3.png",
+        "assets/images/visure-4.png",
+        "assets/images/visure-5.png",
+        "assets/images/visure-6.png"
+
+    ]
+
+}
 
 ];
 
