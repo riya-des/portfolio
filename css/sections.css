@@ -1683,6 +1683,14 @@
 
 }
 
+#uiux,
+#graphics,
+#branding{
+
+    scroll-margin-top:90px;
+
+}
+
 @keyframes polaroidDrop{
 
     0%{
