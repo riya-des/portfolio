@@ -10,31 +10,24 @@
 ===================================================== */
 
 :root {
-
     /* Fonts */
     --font-main: "Montserrat", sans-serif;
-
     /* Colors */
     --white: #ffffff;
     --black: #1A1A1A;
     --accent: #FFE978;
     --gray: #6B6B6B;
     --border: rgba(0, 0, 0, 0.12);
-
     /* Border Radius */
     --radius-small: 8px;
     --radius-medium: 16px;
     --radius-large: 24px;
     --radius-pill: 999px;
-
     /* Shadows */
     --shadow-soft: 0 8px 30px rgba(0, 0, 0, 0.08);
-
     /* Animation */
     --transition: 0.3s ease;
-
 }
-
 
 /* =====================================================
    RESET
@@ -48,7 +41,6 @@
     box-sizing:border-box;
 }
 
-
 /* =====================================================
    HTML
 ===================================================== */
@@ -57,72 +49,48 @@ html{
     scroll-behavior:smooth;
 }
 
-
 /* =====================================================
    BODY
 ===================================================== */
 
 body{
-
     font-family:var(--font-main);
-
     color:var(--black);
-
     background:var(--white);
-
     overflow-x:hidden;
-
     line-height:1.5;
-
     -webkit-font-smoothing:antialiased;
-
     text-rendering:optimizeLegibility;
-
 }
-
 
 /* =====================================================
    IMAGES
 ===================================================== */
 
 img{
-
     display:block;
-
     max-width:100%;
-
 }
-
 
 /* =====================================================
    LINKS
 ===================================================== */
 
 a{
-
     text-decoration:none;
-
     color:inherit;
-
 }
-
 
 /* =====================================================
    BUTTONS
 ===================================================== */
 
 button{
-
     border:none;
-
     background:none;
-
     font:inherit;
-
     cursor:pointer;
-
 }
-
 
 /* =====================================================
    LISTS
@@ -130,11 +98,8 @@ button{
 
 ul,
 ol{
-
     list-style:none;
-
 }
-
 
 /* =====================================================
    INPUTS
@@ -144,13 +109,9 @@ input,
 textarea,
 select,
 button{
-
     font-family:inherit;
-
 }
 
 .page-wrapper{
-
     min-width:1200px;
-
 }
