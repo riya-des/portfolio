@@ -31,3 +31,45 @@ heroVideo.addEventListener("ended", () => {
         },520);
 
 });
+document.addEventListener("DOMContentLoaded", function () {
+
+    const aboutSection = document.querySelector(".about-section");
+    const flipPhone = document.getElementById("flipPhoneTrigger");
+
+    if (!aboutSection || !flipPhone) return;
+
+    const phoneObserver = new IntersectionObserver(
+        function (entries, observer) {
+
+            entries.forEach(function (entry) {
+
+                if (entry.isIntersecting) {
+
+                    // Wait until the user has actually reached the section
+                    setTimeout(function () {
+
+                        // Start vibration
+                        flipPhone.classList.add("phone-vibrate");
+
+                        // Turn screen on after vibration finishes
+                        setTimeout(function () {
+                            flipPhone.classList.add("phone-active");
+                        }, 1500);
+
+                    }, 1000);
+
+                    // Only trigger once
+                    observer.unobserve(aboutSection);
+                }
+
+            });
+
+        },
+        {
+            threshold: 0.6
+        }
+    );
+
+    phoneObserver.observe(aboutSection);
+
+});

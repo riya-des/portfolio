@@ -847,7 +847,7 @@
 .graphics-section{
     position: relative;
     margin-top:100px;
-    margin-bottom:220px;
+    margin-bottom:100px;
 }
 
 .graphics-window{
@@ -1133,6 +1133,119 @@
     scroll-margin-top:90px;
 }
 
+.about-section {
+    width: 100%;
+    margin: 0;
+    padding-top: 0px;
+    padding-bottom: 80px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background: #ffffff;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.about-frame {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 28px;
+}
+
+.about-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 1;
+}
+.flip-phone-trigger {
+    position: absolute;
+    width: clamp(800px, 20vw, 340px);
+    right: -90px;
+    bottom: -220px;
+    z-index: 3;
+    cursor: pointer;
+}
+
+.flip-phone-trigger img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transform: rotate(2deg);
+    transform-origin: center center;
+}
+
+.phone-default {
+    opacity: 1;
+    transition: opacity 0.35s ease;
+}
+
+.phone-message {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.35s ease;
+}
+
+.flip-phone-trigger.phone-active .phone-default {
+    opacity: 0;
+}
+
+.flip-phone-trigger.phone-active .phone-message {
+    opacity: 1;
+}
+@keyframes phoneVibrate {
+    0% {
+        transform: translateX(0) rotate(2deg);
+    }
+
+    10% {
+        transform: translateX(-6px) rotate(1deg);
+    }
+
+    20% {
+        transform: translateX(6px) rotate(3deg);
+    }
+
+    30% {
+        transform: translateX(-5px) rotate(1.5deg);
+    }
+
+    40% {
+        transform: translateX(5px) rotate(2.5deg);
+    }
+
+    50% {
+        transform: translateX(-4px) rotate(1.5deg);
+    }
+
+    60% {
+        transform: translateX(4px) rotate(2.5deg);
+    }
+
+    70% {
+        transform: translateX(-3px) rotate(1.7deg);
+    }
+
+    80% {
+        transform: translateX(3px) rotate(2.3deg);
+    }
+
+    90% {
+        transform: translateX(-1px) rotate(1.9deg);
+    }
+
+    100% {
+        transform: translateX(0) rotate(2deg);
+    }
+}
+
+.flip-phone-trigger.phone-vibrate {
+    animation: phoneVibrate 1.5s ease;
+}
+
 @keyframes polaroidDrop{
     0%{
         opacity:0;
@@ -1215,3 +1328,4 @@
         transform:translateX(0) rotate(0deg);
     }
 }
+
